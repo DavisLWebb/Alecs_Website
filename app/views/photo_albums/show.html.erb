@@ -1,0 +1,29 @@
+<div class="center hero-unit">
+
+  <% @page_title = @photo_album.title %>
+
+  <% content_for :head do %>
+
+  <% end %>
+
+  <h2>Photo Album: <%= @photo_album.title %></h2>
+
+  <% cache(@photo_album) do %>
+
+    <div id="spud_photo_galleries">
+      <% @photo_album.photos.each do |photo| %>
+        <div class="spud_photo_album_thumbnail">
+          <%= link_to image_tag(photo.photo.url(:small), :alt => photo.caption, :title => photo.title), photo.photo.url(:large) %>
+        </div>
+      <% end %>
+    </div>
+
+
+
+    <% if @photo_gallery %>
+      <p><%= link_to 'Back to Albums', photo_gallery_photo_albums_path(@photo_gallery.url_name) %>
+    <% else %>
+      <p><%= link_to 'Back to Albums', photo_albums_path %>
+    <% end %>
+  <% end %>
+</div>

@@ -1,0 +1,10 @@
+== README
+
+This is the online code basis for Alec Durant's website.  I, Davis Webb, am building this for him
+for some online development practice and because it is fun.
+
+Its running on:
+
+* Rails 4.1.1
+* Ruby 2.1.2p95
+

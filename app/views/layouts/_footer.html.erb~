@@ -1,0 +1,12 @@
+<footer>
+  <small>
+    Alec Durant
+  </small>
+  <div>
+    <nav class="foot_nav">	
+      <ul class="foot_ul">
+        <li class="foot_li"><%= link_to "Help",    help_path %></li>
+      </ul>
+    </nav>
+  </div>
+</footer>

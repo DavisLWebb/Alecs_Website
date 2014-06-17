@@ -1,0 +1,240 @@
+@import "bootstrap";
+
+html {
+  overflow-y: scroll;
+}
+
+* {
+    font-family: Helvetica, Arial, "Lucida Grande", sans-serif;
+}
+
+/* The side bar eventually */
+.side_nav{
+  padding-left: 5px;
+  position: fixed;
+  float: left;
+  height: auto;
+ // font-family: Helvetica, Arial, "Lucida Grande", sans-serif;
+  line-height: 1.5;
+  margin: 50px auto; //will push down the box
+  width: 200px;
+
+  -webkit-box-shadow: 2px 12px 7px rgba(0,0,0,0.2);
+     -moz-box-shadow: 2px 12px 7px rgba(0,0,0,0.2);
+          box-shadow: 6px 12px 7px rgba(0,0,0,0.2);
+}
+ 
+.menu-item {
+  background: #fff; // background of the drop down menu
+  width: 200px;
+}
+
+.menu-item h6 {
+  border-bottom: 1px solid rgba(0,0,0,0.3);  //border of each box
+  border-top: 1px solid rgba(255,255,255,0.2); 
+
+  color: #fff; //background color
+  font-size: 17px; //font size of the drop down menu, not the li items
+  font-weight: 500; //boldness of font
+  padding: 7px 12px; //does some weird box shit
+
+  /*Gradient*/
+  background: #03CECE; /* Old browsers */
+  background: -moz-linear-gradient(top, #03CECE 0%, #008B8B 44%, #00C8C8 100%); /* FF3.6+ */
+ /* background: -moz-linear-gradient(top, #03CECE 0%, #008B8B 44%, #00C8C8 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#03CECE), color-stop(44%,#008B8B), color-stop(100%,#00C8C8)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #03CECE 0%,#008B8B 44%,#00C8C8 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #03CECE 0%,#008B8B 44%,#00C8C8 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #03CECE 0%,#008B8B 44%,#00C8C8 100%); /* IE10+ */
+  background: linear-gradient(top, #03CECE 0%,#008B8B 44%,#00C8C8 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#03CECE', endColorstr='#00C8C8',GradientType=0 ); /* IE6-9 */
+}
+
+/* Hover colors, change this shit in a minute */
+.menu-item h6:hover { 
+  background: #cc002c; /* Old browsers */
+  background: -moz-linear-gradient(top,  #008B8B 0%, #03CECE 44%, #008B8B 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#cc002c), color-stop(100%,#6d0019)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top,  #cc002c 0%,#6d0019 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top,  #cc002c 0%,#6d0019 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top,  #cc002c 0%,#6d0019 100%); /* IE10+ */
+  background: linear-gradient(top,  #cc002c 0%,#6d0019 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc002c', endColorstr='#6d0019',GradientType=0 ); /* IE6-9 */
+}
+
+.menu-item h6 a {
+  color: black; /* menu item color */
+  display: block;
+  text-decoration: none;  //those god damn underlines
+  width: 188px;  //alows us to click entire box to hit the link
+}
+
+
+/*ul Styles*/
+.menu-item ul {
+  background: #fff;
+  font-size: 13px;
+  line-height: 30px;
+  height: 0px;  // collapse the menu
+  list-style-type: none;
+  overflow: hidden;
+  padding: 0px;
+
+  //I added
+  
+  margin-top: -5%; 
+  margin-bottom: -5%;
+  
+  //
+
+  /*Animation for the collapse*/
+  -webkit-transition: height 1s ease;
+     -moz-transition: height 1s ease;
+       -o-transition: height 1s ease;
+      -ms-transition: height 1s ease;
+          transition: height 1s ease;
+}
+ 
+.menu-item ul a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #aaa;
+  display: block;
+  width: 200px;
+}
+ 
+/*li Styles*/
+.menu-item li {
+  border-bottom: 1px solid #eee;
+}
+ 
+.menu-item li:hover {
+  background: #eee;
+}
+
+#menu-item-0:hover ul {
+}
+#menu-item-1:hover ul {
+height: 33px;
+}
+#menu-item-2:hover ul {
+height: 63px;
+}
+#menu-item-3:hover ul {
+height: 93px;
+}
+#menu-item-4:hover ul {
+height: 123px;
+}
+#menu-item-5:hover ul {
+height: 153px;
+}
+#menu-item-6:hover ul {
+height: 183px;
+}
+
+/* end of sidebar shit */
+
+
+//basically, the entire website
+body {
+  background-color: #FFF;
+}
+
+section {
+  overflow: auto;
+}
+
+textarea {
+  resize: vertical;
+}
+
+/* associated with center class defined in home.html.erb */
+
+.center {
+  text-align: center;
+  padding: 60px;
+  background: #eee;
+  margin-bottom: 30px;
+  font-size: 18px;
+  font-weight: 200;
+  line-height: 30px;
+  color: inherit;
+  border-radius: 6px;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+  border-bottom-left-radius: 6px;
+}
+
+.center h1 {
+  margin-bottom: 10px;
+}
+
+
+
+/* typography */
+
+h1, h2, h3, h4, h5{
+  line-height: 1;
+}
+
+h1 {
+  font-size: 3em;
+  letter-spacing: -2px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 1.2em;
+  letter-spacing: -1px;
+  margin-bottom: 30px;
+  text-align: center;
+  font-weight: normal;
+  color: #999;
+}
+
+h3, h4 {
+  align: "right";
+}
+
+p {
+  font-size: 1.1em;
+  line-height: 1.7em;
+}
+
+/* footer */
+
+footer {
+  margin-top: 30px;
+  padding-top: 5px;
+  border-top: 1px solid #eaeaea;
+  color: #999;
+}
+
+footer a {
+  color: #555;
+}
+
+footer a:hover {
+  color: #222;
+}
+
+footer small {
+  float: left;
+}
+
+footer nav ul{
+  float: right;
+  list-style: none;
+}
+
+footer ul li {
+  float: left;
+  margin-left: 10px;
+}
+
+header {
+  padding: 10px;
+}

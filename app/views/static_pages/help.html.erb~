@@ -1,0 +1,4 @@
+<div class="center hero-unit">
+  <h1> Help Page </h1>
+  <h2> You can contact me at <a href="http://localhost:3000">my website</a>.  </h2>
+</div>
