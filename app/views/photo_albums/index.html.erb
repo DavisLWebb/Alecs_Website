@@ -1,4 +1,4 @@
-<div class="center hero-unit">
+<div class="center">
 <% @page_title = @photo_gallery ? @photo_gallery.title : 'Gallery' %>
 
 <% content_for :head do %>
@@ -13,13 +13,14 @@
 
 <% cache([@photo_gallery, @photo_albums]) do %>
   <div id="spud_photo_albums">
-    <% @photo_albums.each do |album| %>
+    <% @photo_albums.reverse.each do |album| %>
       <div class="spud_photo_album_thumbnail">
         <h3>
           <%= link_to album.title, (@photo_gallery ? photo_gallery_photo_album_path(@photo_gallery.url_name, album.url_name) : photo_album_path(album.url_name)) %>
         </h3>
         <%= image_tag album.top_photo_url(:medium), :title => album.title %>
       </div>
+      <hr>
     <% end %>
   </div>
 <% end %>

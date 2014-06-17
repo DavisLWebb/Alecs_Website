@@ -50,7 +50,7 @@ html {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#03CECE', endColorstr='#00C8C8',GradientType=0 ); /* IE6-9 */
 }
 
-/* Hover colors, change this shit in a minute */
+/* Hover colors, change this shit in a minute NOTE: it has now been several weeks and no changes have been made */
 .menu-item h6:hover { 
   background: #cc002c; /* Old browsers */
   background: -moz-linear-gradient(top,  #008B8B 0%, #03CECE 44%, #008B8B 100%); /* FF3.6+ */
@@ -172,7 +172,6 @@ textarea {
 }
 
 
-
 /* typography */
 
 h1, h2, h3, h4, h5{
@@ -195,8 +194,28 @@ h2 {
   color: #999;
 }
 
-h3, h4 {
-  align: "right";
+hr {
+  align: center;
+  width: 50%;
+  display: block; 
+  height: 1px;
+  border: 0; 
+  border-top: 1px solid #ccc;
+  margin: 0 auto; //clears area around an element, in this case, the hr
+  margin-top: 30px; 
+}
+
+.spud_photo_album_thumbnail {
+  margin-top: 20px;
+}
+
+.spud_photo{
+  padding: 10px;
+}
+
+.spud_photo a img{
+  height: 75px;
+  width: 75px;
 }
 
 p {

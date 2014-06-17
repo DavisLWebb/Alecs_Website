@@ -156,7 +156,6 @@ textarea {
   padding: 60px;
   background: #eee;
   margin-bottom: 30px;
-  margin-left: 300px;
   font-size: 18px;
   font-weight: 200;
   line-height: 30px;
@@ -171,7 +170,6 @@ textarea {
 .center h1 {
   margin-bottom: 10px;
 }
-
 
 
 /* typography */
@@ -196,8 +194,28 @@ h2 {
   color: #999;
 }
 
-h3, h4 {
-  align: "right";
+hr {
+  align: center;
+  width: 50%;
+  display: block; 
+  height: 1px;
+  border: 0; 
+  border-top: 1px solid #ccc;
+  margin: 0 auto; //clears area around an element, in this case, the hr
+  margin-top: 30px; 
+}
+
+.spud_photo_album_thumbnail {
+  margin-top: 20px;
+}
+
+.spud_photo{
+  padding: 10px;
+}
+
+.spud_photo a img{
+  height: 75px;
+  width: 75px;
 }
 
 p {

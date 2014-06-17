@@ -1,4 +1,4 @@
-<div class="center hero-unit">
+<div class="center">
 
   <% @page_title = @photo_album.title %>
 
@@ -12,7 +12,7 @@
 
     <div id="spud_photo_galleries">
       <% @photo_album.photos.each do |photo| %>
-        <div class="spud_photo_album_thumbnail">
+        <div class="spud_photo">
           <%= link_to image_tag(photo.photo.url(:small), :alt => photo.caption, :title => photo.title), photo.photo.url(:large) %>
         </div>
       <% end %>
