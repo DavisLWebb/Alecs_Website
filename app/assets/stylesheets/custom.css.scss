@@ -138,7 +138,7 @@ height: 183px;
 
 //basically, the entire website
 body {
-  background-color: #FFF;
+  background-color: #72d69b;
 }
 
 section {
@@ -150,11 +150,13 @@ textarea {
 }
 
 /* associated with center class defined in home.html.erb */
-
+.container{
+  width: 1800px;
+}
 .center {
   text-align: center;
   padding: 60px;
-  background: #eee;
+  background: #2c9d91;
   margin-bottom: 30px;
   font-size: 18px;
   font-weight: 200;
@@ -169,6 +171,7 @@ textarea {
 
 .center h1 {
   margin-bottom: 10px;
+  
 }
 
 

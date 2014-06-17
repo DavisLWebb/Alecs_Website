@@ -50,7 +50,7 @@ html {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#03CECE', endColorstr='#00C8C8',GradientType=0 ); /* IE6-9 */
 }
 
-/* Hover colors, change this shit in a minute */
+/* Hover colors, change this shit in a minute NOTE: it has now been several weeks and no changes have been made */
 .menu-item h6:hover { 
   background: #cc002c; /* Old browsers */
   background: -moz-linear-gradient(top,  #008B8B 0%, #03CECE 44%, #008B8B 100%); /* FF3.6+ */
@@ -138,7 +138,7 @@ height: 183px;
 
 //basically, the entire website
 body {
-  background-color: #FFF;
+  background-color: #72d69b;
 }
 
 section {
@@ -150,11 +150,13 @@ textarea {
 }
 
 /* associated with center class defined in home.html.erb */
-
+.container{
+  width: 1800px;
+}
 .center {
   text-align: center;
   padding: 60px;
-  background: #eee;
+  background: #1ed565;
   margin-bottom: 30px;
   font-size: 18px;
   font-weight: 200;
@@ -169,6 +171,7 @@ textarea {
 
 .center h1 {
   margin-bottom: 10px;
+  
 }
 
 
