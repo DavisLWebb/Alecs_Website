@@ -18,12 +18,11 @@
       <% end %>
     </div>
 
-
-
     <% if @photo_gallery %>
       <p><%= link_to 'Back to Albums', photo_gallery_photo_albums_path(@photo_gallery.url_name) %>
     <% else %>
       <p><%= link_to 'Back to Albums', photo_albums_path %>
     <% end %>
   <% end %>
+
 </div>

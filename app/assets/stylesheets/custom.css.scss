@@ -138,7 +138,8 @@ height: 183px;
 
 //basically, the entire website
 body {
-  background-color: #72d69b;
+  //background-color: #72d69b;
+  background: #fff;
 }
 
 section {
@@ -151,12 +152,13 @@ textarea {
 
 /* associated with center class defined in home.html.erb */
 .container{
-  width: 1800px;
+  width: auto;
 }
 .center {
   text-align: center;
   padding: 60px;
-  background: #2c9d91;
+  //background: #2c9d91;
+  background: #eee;
   margin-bottom: 30px;
   font-size: 18px;
   font-weight: 200;
@@ -174,6 +176,35 @@ textarea {
   
 }
 
+header{
+  //this is how you center
+  margin-left: auto;
+  margin-right: auto;
+  //no longer center shit
+  text-align: center;
+  padding: 60px;
+  width: 500px;
+  background: #eee;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  line-height: 30px;
+  color: inherit;
+  border-radius: 6px;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+  border-bottom-left-radius: 6px;
+}
+
+header div{
+  align: center;
+}
+
+header h1{
+  align: center;
+  font-size: 70px;
+  font-weight: 200;
+}
 
 /* typography */
 
@@ -214,6 +245,7 @@ hr {
 
 .spud_photo{
   padding: 10px;
+  position: right;
 }
 
 .spud_photo a img{

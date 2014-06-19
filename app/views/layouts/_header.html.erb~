@@ -1,5 +1,7 @@
-<%-# Add three header classes -%>
 <header>
   <div>
+      <h1 class="head_h1">
+        Mr_Durant_
+      </h1>
   </div>
 </header>
