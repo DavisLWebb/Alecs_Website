@@ -49692,3 +49692,146 @@ Processing by StaticPagesController#home as HTML
   Rendered layouts/_sidebar.erb (0.3ms)
   Rendered layouts/_footer.html.erb (0.1ms)
 Completed 200 OK in 17ms (Views: 16.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-06-19 21:54:53 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (186.7ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+  Rendered layouts/_sidebar.erb (1.1ms)
+  Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 695ms (Views: 669.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-06-19 21:54:54 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-06-19 21:54:54 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-19 21:54:54 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-19 21:54:54 -0400
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2014-06-19 21:54:54 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-19 21:54:54 -0400
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2014-06-19 21:54:54 -0400
+
+
+Started GET "/assets/skrollr.js?body=1" for 127.0.0.1 at 2014-06-19 21:54:54 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-19 21:54:54 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2014-06-19 22:00:54 -0400
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (14.8ms)
+  Rendered layouts/_header.html.erb (0.3ms)
+  Rendered layouts/_sidebar.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 26ms (Views: 24.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-06-19 22:00:55 -0400
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (14.1ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_sidebar.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 23ms (Views: 22.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/photos" for 127.0.0.1 at 2014-06-19 22:01:06 -0400
+Processing by PhotoAlbumsController#index as HTML
+  Parameters: {"authenticity_token"=>"REZgohlSKqxQxG+w9M+RW/L0sJoa1e5V+VhQjmYIBpg="}
+  [1m[35mSpudPhotoAlbum Load (0.2ms)[0m  SELECT "spud_photo_albums".* FROM "spud_photo_albums"   ORDER BY created_at desc
+  [1m[36mSpudPhoto Load (0.3ms)[0m  [1mSELECT "spud_photos".* FROM "spud_photos" INNER JOIN "spud_photo_albums_photos" ON "spud_photos"."id" = "spud_photo_albums_photos"."spud_photo_id" WHERE "spud_photo_albums_photos"."spud_photo_album_id" = ?  ORDER BY spud_photo_albums_photos.sort_order asc[0m  [["spud_photo_album_id", 1]]
+  [1m[35mSpudPhoto Load (0.2ms)[0m  SELECT "spud_photos".* FROM "spud_photos" INNER JOIN "spud_photo_albums_photos" ON "spud_photos"."id" = "spud_photo_albums_photos"."spud_photo_id" WHERE "spud_photo_albums_photos"."spud_photo_album_id" = ?  ORDER BY spud_photo_albums_photos.sort_order asc  [["spud_photo_album_id", 2]]
+  Rendered photo_albums/index.html.erb within layouts/application (165.1ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_sidebar.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (5.2ms)
+Completed 200 OK in 207ms (Views: 183.8ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-06-19 22:01:07 -0400
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2014-06-19 22:01:07 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-19 22:01:07 -0400
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2014-06-19 22:01:07 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-19 22:01:07 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-19 22:01:07 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-06-19 22:01:07 -0400
+
+
+Started GET "/assets/skrollr.js?body=1" for 127.0.0.1 at 2014-06-19 22:01:07 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-19 22:01:07 -0400
+
+
+Started GET "/photos/album-1" for 127.0.0.1 at 2014-06-19 22:01:09 -0400
+Processing by PhotoAlbumsController#show as HTML
+  Parameters: {"id"=>"album-1"}
+  [1m[36mSpudPhotoAlbum Load (0.2ms)[0m  [1mSELECT  "spud_photo_albums".* FROM "spud_photo_albums"  WHERE "spud_photo_albums"."url_name" = 'album-1'  ORDER BY "spud_photo_albums"."id" ASC LIMIT 1[0m
+  [1m[35mSpudPhoto Load (0.1ms)[0m  SELECT "spud_photos".* FROM "spud_photos" INNER JOIN "spud_photo_albums_photos" ON "spud_photos"."id" = "spud_photo_albums_photos"."spud_photo_id" WHERE "spud_photo_albums_photos"."spud_photo_album_id" = ?  ORDER BY spud_photo_albums_photos.sort_order asc  [["spud_photo_album_id", 1]]
+  Rendered photo_albums/show.html.erb within layouts/application (11.4ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_sidebar.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 164ms (Views: 90.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-06-19 22:01:31 -0400
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (10.9ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_sidebar.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 21ms (Views: 20.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/about" for 127.0.0.1 at 2014-06-19 22:01:35 -0400
+Processing by StaticPagesController#about as HTML
+  Rendered static_pages/about.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_sidebar.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 46ms (Views: 45.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/help" for 127.0.0.1 at 2014-06-19 22:01:43 -0400
+Processing by StaticPagesController#help as HTML
+  Rendered static_pages/help.html.erb within layouts/application (0.5ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_sidebar.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 43ms (Views: 42.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/help" for 127.0.0.1 at 2014-06-19 22:01:43 -0400
+Processing by StaticPagesController#help as HTML
+  Rendered static_pages/help.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_header.html.erb (0.1ms)
+  Rendered layouts/_sidebar.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 16ms (Views: 15.4ms | ActiveRecord: 0.0ms)
