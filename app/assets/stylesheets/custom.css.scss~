@@ -10,7 +10,7 @@ html {
 
 /* The side bar is mostly done --June 28 */
 .side_nav{
-  padding-left: 5px;
+  //padding-left: px;
   position: fixed;
   float: left;
   height: auto;
@@ -58,7 +58,7 @@ html {
   background: -webkit-linear-gradient(top,  #008B8B 0%, #03CECE 44%, #008B8B 100%); /* Chrome10+,Safari5.1+ */
   background: -o-linear-gradient(top,  #008B8B 0%, #03CECE 44%, #008B8B 100%); /* Opera 11.10+ */
   background: -ms-linear-gradient(top,  #008B8B 0%, #03CECE 44%, #008B8B 100%); /* IE10+ */
-  background: linear-gradient(top,  #cc002c 0%,#6d0019 100%); /* W3C */
+  background: linear-gradient(top,  #008B8B 0%, #03CECE 44%, #008B8B 100%); /* W3C */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc002c', endColorstr='#6d0019',GradientType=0 ); /* IE6-9 */
 }
 
@@ -289,6 +289,30 @@ footer ul li {
   margin-left: 10px;
 }
 
+/*********************************/
+
 header {
   padding: 10px;
+}
+
+/*********************************/
+
+.update{
+  //this is how you center
+  margin-left: auto;
+  margin-right: auto;
+  //no longer center shit
+  text-align: center;
+  padding: 60px;
+  width: 500px;
+  background: #eee;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  line-height: 30px;
+  color: inherit;
+  border-radius: 6px;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+  border-bottom-left-radius: 6px;  
 }

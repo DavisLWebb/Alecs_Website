@@ -1,5 +1,19 @@
-<div class="center">
-  <h1> ART FOR MEN </h1>
+<!----<div class="center">
+  <h1> ART </h1>
   <h2> This is Alecs websitearu </h2>
-  <!-----<h3 align="right"><%=image_tag("alec.jpg", alt: "Alec" , width: 50)%></h3> --->
+</div>
+---->
+<div>
+  <h3 class="news"> News Board 
+  </h3>
+    <% @posts.each do |post| %>
+      <div class="update">
+        <!---- adds posts ----->
+        <span class="content"><%= post["content"] %>
+        </span>
+        <span class="timestamp">
+          Posted <%= time_ago_in_words(post["created_at"]) %> ago.
+        </span>
+      </div>
+    <% end %>
 </div>

@@ -10,7 +10,7 @@ html {
 
 /* The side bar is mostly done --June 28 */
 .side_nav{
-  padding-left: 5px;
+  //padding-left: 5px;
   position: fixed;
   float: left;
   height: auto;
@@ -289,6 +289,30 @@ footer ul li {
   margin-left: 10px;
 }
 
+/*********************************/
+
 header {
   padding: 10px;
+}
+
+/*********************************/
+
+.update{
+  //this is how you center
+  margin-left: auto;
+  margin-right: auto;
+  //no longer center shit
+  text-align: center;
+  padding: 60px;
+  width: 500px;
+  background: #eee;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  line-height: 30px;
+  color: inherit;
+  border-radius: 6px;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+  border-bottom-left-radius: 6px;  
 }
