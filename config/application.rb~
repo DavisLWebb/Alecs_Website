@@ -8,6 +8,17 @@ Bundler.require(*Rails.groups)
 
 module AlecsWebsite
   class Application < Rails::Application
+    Spud::Core.config.admin_applications += [{
+      :name => 'Posts', 
+      :thumbnail => "/home/olivia/Documents/Alecs_Website/app/assets/images/post.png", 
+      :url => "/admin/posts"
+    }]
+
+    Spud::Core.configure do |config|
+      config.site_name = "Alec Durant"
+      config.from_address = "no-reply@alec-durant.com"
+    end
+
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration should go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded.
@@ -36,6 +47,6 @@ module AlecsWebsite
           config.storage_path = ":rails_root/public/system/spud_photos/:id/:style/:basename.:extension"
           config.storage_url = "/system/spud_photos/:id/:style/:basename.:extension"
     end
-
+    config.assets.precompile += %w(*.png *.jpg *.jpeg *.gif)
   end
 end

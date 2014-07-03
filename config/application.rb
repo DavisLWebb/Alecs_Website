@@ -8,6 +8,16 @@ Bundler.require(*Rails.groups)
 
 module AlecsWebsite
   class Application < Rails::Application
+    Spud::Core.config.admin_applications += [{
+      :name => 'Posts', 
+      :thumbnail => "admin/module_icon.png", 
+      :url => "/admin/posts"
+    }]
+    Spud::Core.configure do |config|
+      config.site_name = "Alec Durant"
+      config.from_address = "no-reply@alec-durant.com"
+    end
+
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration should go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded.
