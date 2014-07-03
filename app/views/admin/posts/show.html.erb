@@ -1,0 +1,15 @@
+<% content_for :data_controls do %>
+  <%= link_to 'Edit', edit_admin_post_path(@post), :class => 'btn' %>
+<% end %>
+
+<ul>
+  <li><strong>Content:</strong> <%= @post.content %></li>
+</ul>
+
+<div class="form-actions">
+  <%= link_to "Back", admin_posts_path, :class => "btn" %>
+</div>
+
+<script>
+  $(document).ready(app.admin.posts.show);
+</script>

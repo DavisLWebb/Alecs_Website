@@ -1,0 +1,32 @@
+<% content_for :data_controls do %>
+  <%= link_to "New Post", new_admin_post_path, :class => "btn btn-primary", :title => "New Post" %>
+<% end %>
+
+<% content_for :detail do %>
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>Content</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% @posts.each do |post| %>
+        <tr>
+          <td><%= post.content %></td>
+          <td align="right" width="150">
+            <%= link_to 'Details', admin_post_path(post), :class => 'btn btn-mini' %>
+            <%= link_to 'Edit', edit_admin_post_path(post), :class => 'btn btn-mini' %>
+            <%= link_to 'Delete', admin_post_path(post), :method => :delete, :data => {:confirm => 'Are you sure you want to delete this Post?'}, :class => 'btn btn-danger btn-mini' %>
+          </td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+  <%= will_paginate @posts %>
+
+  <script>
+    $(document).ready(app.admin.posts.index);
+  </script>
+
+<% end %>
