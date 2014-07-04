@@ -3,17 +3,15 @@
   <h2> This is Alecs websitearu </h2>
 </div>
 ---->
-<div>
-  <h3 class="news"> News Board 
-  </h3>
-    <% @posts.each do |post| %>
-      <div class="update">
+<% @posts.each do |post| %>
+  <div class="update-div">
+      <p class="update">
         <!---- adds posts ----->
-        <span class="content"><%= post["content"] %>
-        </span>
-        <span class="timestamp">
-          Posted <%= time_ago_in_words(post["created_at"]) %> ago.
-        </span>
-      </div>
-    <% end %>
-</div>
+          <p class="content"><%= post["content"] %>
+          </p>
+          <p class="timestamp">
+            Posted <%= time_ago_in_words(post["created_at"]) %> ago.
+          </p>
+      </p>
+  </div>
+<% end %>

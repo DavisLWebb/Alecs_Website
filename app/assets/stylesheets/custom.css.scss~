@@ -5,13 +5,16 @@ html {
 }
 
 * {
-    font-family: Helvetica, Arial, "Lucida Grande", sans-serif;
+
+  font-family: Helvetica, Arial, "Lucida Grande", sans-serif;
 }
 
 /* The side bar is mostly done --June 28 */
 .side_nav{
-  //padding-left: px;
+
+  //padding-left: 5px;
   position: fixed;
+  z-index: 1;
   float: left;
   height: auto;
  // font-family: Helvetica, Arial, "Lucida Grande", sans-serif;
@@ -139,7 +142,7 @@ height: 183px;
 //basically, the entire website
 body {
   //background-color: #72d69b;
-  background: #fff;
+  background: #262626;
 }
 
 section {
@@ -154,6 +157,7 @@ textarea {
 .container{
   width: auto;
 }
+
 .center {
   text-align: center;
   padding: 60px;
@@ -239,6 +243,7 @@ hr {
   margin-top: 30px; 
 }
 
+/* Album section */
 .spud_photo_album_thumbnail {
   margin-top: 20px;
 }
@@ -252,6 +257,8 @@ hr {
   height: 75px;
   width: 75px;
 }
+
+/********************/
 
 p {
   font-size: 1.1em;
@@ -268,6 +275,7 @@ footer {
 }
 
 footer a {
+  padding-right: 10px;
   color: #555;
 }
 
@@ -277,6 +285,7 @@ footer a:hover {
 
 footer small {
   float: left;
+  padding-left: 10px;
 }
 
 footer nav ul{
@@ -289,19 +298,40 @@ footer ul li {
   margin-left: 10px;
 }
 
-/*********************************/
+/* Header */
 
 header {
   padding: 10px;
+
+  //remove this to resize header
+  width: 95%;
 }
 
-/*********************************/
+
+/* Post divisions */
+
+.update-div{
+  position: relative;
+  width: 600px;
+  margin: auto;
+  
+}
+
+/* Timestamp */
+.timestamp {
+  font-size: 12px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  color: $grayLight;
+}
+
+
+/* Posts */
 
 .update{
-  //this is how you center
   margin-left: auto;
   margin-right: auto;
-  //no longer center shit
   text-align: center;
   padding: 60px;
   width: 500px;
@@ -309,10 +339,52 @@ header {
   margin-top: 15px;
   margin-bottom: 15px;
   line-height: 30px;
-  color: inherit;
   border-radius: 6px;
   border-top-left-radius: 6px;
   border-top-right-radius: 6px;
   border-bottom-right-radius: 6px;
   border-bottom-left-radius: 6px;  
+}
+
+/* Text of Posts */
+.content {
+  display: block;
+}
+
+
+/* Wolf Pack */
+
+.forest{
+  text-align:center;
+  position: absolute;
+  margin: 50px auto;
+  width: 20%;
+  height: 500px;
+  margin-left: auto;
+}
+
+.pack {
+  display:inline-block;
+  width: 150px;
+  background: #eee;
+  //margin: 50px auto;
+  line-height: 15px;
+  border-radius: 6px;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+  border-bottom-left-radius: 6px;  
+}
+
+.wolves{
+  margin-left:auto;
+  list-style: none;
+}
+
+.wolf h6 a{
+  color: black; /* menu item color */
+  display: block;
+  text-decoration: none;  //those god damn underlines
+  font-size: 17px; //font size of the drop down menu, not the li items
+  font-weight: 500; //boldness of font
 }
