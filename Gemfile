@@ -1,5 +1,8 @@
 source 'https://rubygems.org'
 
+
+gem 'social-share-button'
+
 gem 'skrollr-rails'
 
 gem 'therubyracer'

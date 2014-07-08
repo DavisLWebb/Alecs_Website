@@ -312,7 +312,7 @@ header {
 
 .update-div{
   position: relative;
-  width: 600px;
+  width: 50%;
   margin: auto;
   
 }
@@ -334,7 +334,7 @@ header {
   margin-right: auto;
   text-align: center;
   padding: 60px;
-  width: 500px;
+  width: 90%;
   background: #eee;
   margin-top: 15px;
   margin-bottom: 15px;
@@ -387,4 +387,25 @@ header {
   text-decoration: none;  //those god damn underlines
   font-size: 17px; //font size of the drop down menu, not the li items
   font-weight: 500; //boldness of font
+}
+
+.wolf h6 a:hover{
+  color: white;
+}
+
+.main-body{
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  padding: 60px;
+  width: 70%;
+  background: #eee;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  line-height: 30px;
+  border-radius: 6px;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+  border-bottom-left-radius: 6px;  
 }

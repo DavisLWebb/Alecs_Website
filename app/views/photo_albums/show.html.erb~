@@ -1,4 +1,4 @@
-<div class="center">
+<div class="main-body">
 
   <% @page_title = @photo_album.title %>
 
@@ -6,17 +6,20 @@
 
   <% end %>
 
-  <h2>Photo Album: <%= @photo_album.title %></h2>
+  <h2><%= @photo_album.title %></h2>
 
   <% cache(@photo_album) do %>
 
     <div id="spud_photo_galleries">
+      <% for i in 0..5 %>
       <% @photo_album.photos.each do |photo| %>
+      
         <div class="spud_photo">
           <%= link_to image_tag(photo.photo.url(:small), :alt => photo.caption, :title => photo.title), photo.photo.url(:large) %>
         </div>
       <% end %>
-    </div>
+      <% end %>
+    
 
     <% if @photo_gallery %>
       <p><%= link_to 'Back to Albums', photo_gallery_photo_albums_path(@photo_gallery.url_name) %>
@@ -24,4 +27,5 @@
       <p><%= link_to 'Back to Albums', photo_albums_path %>
     <% end %>
   <% end %>
+
 </div>

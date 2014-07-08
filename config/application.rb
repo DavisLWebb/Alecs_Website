@@ -35,10 +35,10 @@ module AlecsWebsite
       config.galleries_enabled = false
       config.base_path = 'photos'
       config.photo_styles = {
-        :small => '50x50#',
+        :small => '100x100#',
         :medium => '200x200#',
-        :large => '400x400#',
-        :huge => '600x600'
+        :large => "1920x1080",
+        :huge => "1920x1080"
       }
       config.max_image_upload_size = 0
       config.paperclip_storage = :filesystem #use :s3 to use s3 storage (aws gem required)
